@@ -1,0 +1,58 @@
+main, nav, header, article, section,footer {
+    border: 1px solid gray;
+    padding: 10px;
+}
+#elsonav {
+    display: grid;
+    grid-template-columns: 80% 10% 10%;
+    list-style-type: none;
+}
+#elsonav a{
+    text-decoration: none;
+    color: white;
+    background-color: red;
+}
+
+.masodik a{
+    color: red;
+    background-color: white;
+}
+
+nav{
+    display: grid;
+    width: 60% auto;
+}
+
+.nagykep img{
+    width: 100%;
+    
+}
+
+.kep{
+    margin: auto;
+}
+
+.kiskep{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.kiskep img{
+    width: 90%;
+}
+
+
+#elsonav li{
+    
+}
+
+@media screen and (max-width: 800px){
+    nav ul{
+        grid-template-columns: 1fr;
+    }
+    section.kiskep{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
