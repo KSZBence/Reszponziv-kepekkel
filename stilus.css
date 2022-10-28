@@ -1,56 +1,91 @@
-main, nav, header, article, section,footer {
+main,
+nav,
+header,
+article,
+section,
+footer {
     border: 1px solid gray;
     padding: 10px;
-}
+}   
+
 #elsonav {
     display: grid;
     grid-template-columns: 80% 10% 10%;
     list-style-type: none;
+    padding-left: 0;
 }
-#elsonav a{
+
+#elsogomb {
     text-decoration: none;
+    background-color: rgb(202, 51, 51);
     color: white;
-    background-color: red;
+    padding: 1em;
+
 }
 
-.masodik a{
-    color: red;
-    background-color: white;
+nav {
+    background-color: rgb(207, 204, 204);
+    height: 3em;
 }
 
-nav{
-    display: grid;
-    width: 60% auto;
+.masodik a {
+    text-decoration: none;
+    color: rgb(243, 33, 33);
+    border: 1px solid black;
+    padding: 1em;
 }
 
-.nagykep img{
+#elsogomb:hover {
+    background-color: rgb(207, 204, 204);
+    color: black;
+    border: 1px solid black;
+    cursor: none;
+}
+
+.masodik a:hover {
+    background-color: rgb(155, 152, 152);
+    color: black;
+    cursor: none;
+}
+
+.nagykep img {
     width: 100%;
-    
+
 }
 
-.kep{
+.nagykep:hover {
+    cursor: not-allowed;
+}
+
+.kep {
     margin: auto;
+    border: 1PX solid black;
 }
 
-.kiskep{
+.kiskep {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.5em;
+    padding: 10px;
 }
 
-.kiskep img{
-    width: 90%;
+.kiskep img {
+    width: 100%;
 }
 
 
-#elsonav li{
-    
-}
+#elsonav li {}
 
-@media screen and (max-width: 800px){
-    nav ul{
+@media screen and (max-width: 800px) {
+    nav ul {
         grid-template-columns: 1fr;
     }
-    section.kiskep{
+
+    #elsonav{
+        grid-template-columns: 1fr;
+    }
+
+    .kiskep {
         display: grid;
         grid-template-columns: 1fr;
         gap: 10px;
